@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); */
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'IM Fell French Canon', serif;
+    color: #404549;
+}
+
+/* Navigation */
+
+.navbar-brand {
+    height: 2rem;
+    margin-bottom: 10px;
+}
+
+.navbar-brand img {
+    width: 30px;
+    padding-bottom: 10px
+}
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-family: 'IM Fell French Canon', serif;
+    letter-spacing: .1rem;
+    font-size: .9rem;
+    background: rgba(0, 0, 0, 0.795) !important;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+    font-size: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: .8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: red;
+}
+
+.navbar .narrow {
+    width: 75%;
+    margin: 1.5rem auto;
+    padding-top: 2rem;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+.navbar-nav .dropdown li a {
+    color: white;
+    padding: 20px;
+}
+
+.navbar-nav .dropdown li a:hover {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Landing  */
+
+.home-inner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.041)), url(imgs/img14.jpeg);
+}
+
+.title {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+}
+
+.title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    font-family: 'IM Fell French Canon', serif;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.title h3 {
+    font-style: 2rem;
+    font-family: 'Great Vibes', cursive;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 2rem;
+}
+
+.title h1 img {
+    width: 50px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+
+.btn-lg {
+    border-width: medium;
+    padding: .5rem 1.2rem;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-lg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .3), transparent);
+    transition: all 650ms;
+}
+
+
+/* .btn-lg:hover {
+    border-color: red;
+    background-color: red;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19)
+} */
+
+.btn-lg:hover:before {
+    left: 100%;
+}
+
+
+/* Sections */
+
+section {
+    padding: 6rem 0;
+
+}
+
+.section-heading h1 {
+    font-weight: 300;
+    color: red;
+}
+
+/* About section */
+.section-heading h1 {
+    font-weight: 300;
+    color: red;
+}
+
+.about-title h1 img {
+    width: 50px;
+    height: 60px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.section-heading h4 {
+    text-transform: uppercase;
+    line-height: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.about p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu section */
+.point-right,
+.point-left {
+    position: relative;
+    background-color: white;
+    display: flex;
+}
+
+.point-left::before,
+.point-right::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: inherit;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: 1;
+}
+
+.menu-item-description {
+    padding: 50px 10px;
+    color: #212529;
+    margin: auto;
+}
+
+.menu-item-description h6 {
+    font-size: 20px;
+    color: red;
+}
+
+.menu-item-description h1 {
+    color: #212529;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+/* Events section */
+.events {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.63)), url(imgs/img15.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.events .events-statement {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.events .events-calendar {
+    color: white;
+    font-size: 20px;
+    list-style: none;
+    padding-top: 60px;
+}
+
+.events .events-calendar ul {
+    color: white;
+    font-size: 20px;
+    list-style: none;
+}
+
+
+
+
+
+/* contact Section */
+
+section .contact {
+    overflow: hidden;
+}
+
+.contact {
+    background-color: black;
+    color: white;
+}
+
+.cafe-info i {
+    color: red;
+    font-size: 35px;
+}
+
+.cafe-info h3 {
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.cafe-info p,
+.cafe-info address {
+    color: rgba(255, 255, 255, .5)
+}
+
+
+
+hr {
+    border-top: 1px solid rgba(243, 8, 8, 0.952);
+}
+
+
+
+
+
+
+
+
+
+.btn-secondary {
+    border-width: medium;
+    border-radius: 0;
+    padding: .6rem 1.2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1rem;
+    border-color: red;
+    background-color: red;
+    color: white;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    border-color: red;
+    background-color: red;
+    color: white;
+}
+
+
+
+
+@media (min-width: 576px) {
+
+    .point-right::before,
+    .point-left::before {
+        display: none;
+    }
+
+    .menu-item-description {
+        padding: 50px 20px;
+    }
+}
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+
+    .point-right::before,
+    .point-left::before {
+        display: block;
+        top: 50%;
+        left: initial;
+        transform: translate(0, -50%)rotate(45deg);
+    }
+
+    .point-left::before {
+        left: -12px;
+    }
+
+    .point-right::before {
+        right: -12px;
+    }
+
+    /* .menu-item-description p {
+        display: none;
+    }
+
+    .menu-item-description .btn {
+        color: #fff !important;
+        background-color: white;
+    } */
+}
+
+footer {
+    background-color: rgb(22, 22, 22);
+    color: rgba(255, 255, 255, .5)
+}
+
+
+
+
+
+nav.black .logo {
+    line-height: .01px;
+}
+
+nav.black ul li a {
+
+    color: #fff;
+    line-height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--- Extra Bootstrap Column Padding --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top {
+    backface-visibility: hidden;
+}
+
+
+
+
+
+/*--- Fixed Landing Page Section --*/
+.landing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: table;
+    z-index: -1;
+}
+
+.home-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-inner {
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/*--- iOS Fixed Background Image --*/
+.fixed-background {
+    position: relative;
+    width: 100%;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999 !important;
+}
+
+.fixed {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+  
+  Extra small (xs) devices (portrait phones, less than 576px)
+  No media query since this is the default in Bootstrap
+  
+  Small (sm) devices (landscape phones, 576px and up)
+  @media (min-width: 576px) { ... }
+  
+  Medium (md) devices (tablets, 768px and up)
+  @media (min-width: 768px) { ... }
+  
+  Large (lg) devices (desktops, 992px and up)
+  @media (min-width: 992px) { ... }
+  
+  Extra (xl) large devices (large desktops, 1200px and up)
+  @media (min-width: 1200px) { ... }
+  
+  =============*/
